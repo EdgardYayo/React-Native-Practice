@@ -1,12 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import NavBar from './components/NavBar/NavBar';
+import Foods from './components/Foods/Foods.jsx';
 
 export default function App() {
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <NavBar/>
+      <Foods/>
     </View>
   );
 }
@@ -14,8 +16,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#461b93',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
 });
+
+
+ // Strong purple #461b93
+ // Light purple #8253d7
+ // Orange #f78f1e
